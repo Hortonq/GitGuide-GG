@@ -141,9 +141,11 @@ $ git restore --staged %имя_файла%
 39. Чтобы "откатить" коммит используем команду *git reset --hard <commit hash>*
 ```bash
 $ git reset --hard <commit hash>
-40.Может быть так, что вы случайно изменили файл, который не планировали. Теперь он отображается в *Changes not staged for commit (modified)*. Чтобы вернуть всё «как было», можно выполнить команду *git restore <file>*. 
+```
+40. Может быть так, что вы случайно изменили файл, который не планировали. Теперь он отображается в *Changes not staged for commit (modified)*. Чтобы вернуть всё «как было», можно выполнить команду *git restore <file>*. 
 ```bash
 $ git restore <file>
+```
 ------
 
 
