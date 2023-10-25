@@ -138,6 +138,7 @@ $ git commit --amend --no-edit
 38. Чтобы убрать файл из списка для коммита, используется команда *git restore --staged*
 ```bash
 $ git restore --staged %имя_файла%
+```
 39. Чтобы "откатить" коммит используем команду *git reset --hard <commit hash>*
 ```bash
 $ git reset --hard <commit hash>
