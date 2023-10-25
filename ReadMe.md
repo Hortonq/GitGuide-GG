@@ -128,7 +128,36 @@ $ ssh -T git@github.com
 ```
 35. Чтобы загрузить данные с локального репозитория на удалённый, используется команда *git push*
 ```bash
+git clone git@github.com:YandexPraktikum/first-project.git (от англ. clone, «клон», «копия») — склонируй репозиторий с URL first-project.git из аккаунта YandexPraktikum на мой локальный компьютер.
+```bash
+git branch feature/the-finest-branch (от англ. branch, «ветка») — создай ветку от текущей с названием feature/the-finest-branch;
+```bash
+git checkout -b feature/the-finest-branch — создай ветку feature/the-finest-branch и сразу переключись на неё.
+```bash
+git branch (от англ. branch, «ветка») — покажи, какие есть ветки в репозитории и в какой из них я нахожусь (текущая ветка будет отмечена символом *);
+```bash
+git branch -a — покажи все известные ветки, как локальные (в локальном репозитории), так и удалённые (в origin, или на GitHub).
+```bash
+git checkout feature/br — переключись на ветку feature/br
+```bash
+git diff main HEAD (от англ. difference, «отличие», «разница») — покажи разницу между веткой main и указателем на HEAD;
+```bash
+git diff HEAD~2 HEAD — покажи разницу между тем коммитом, который был два коммита назад, и текущим.
+```bash
+git branch -d br-name — удали ветку br-name, но только если она является частью main;
+```bash
+git branch -D br-name — удали ветку br-name, даже если она не объединена с main.
+```bash
+git merge main (от англ. merge, «сливать», «поглощать») — объедини ветку main с текущей активной веткой.
+```bash
+git push -u origin my-branch (от англ. push, «толкнуть», «протолкнуть») — отправь новую ветку my-branch в удалённый репозиторий и свяжи локальную ветку с удалённой, чтобы при дополнительных коммитах можно было писать просто git push без -u;
+```bash
+git push my-branch — отправь дополнительные изменения в ветку my-branch, которая уже существует в удалённом репозитории;
+```bash
+git pull (от англ. pull, «вытянуть») — подтяни изменения текущей ветки из удалённого репозитория.
+```bash
 $ git push -v origin master/main
+```bash
 ```
 36. Статусом *untracked* помечается файл, о существовании которого Git знает, но не следит за изменениями в нём. Этот статус — противоположность tracked, в который попадают все файлы, отслеживаемые Git. Файл переходит в статус *staged* после выполнения *git add*. Статус *modified* означает, что файл был изменён
 
