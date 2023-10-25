@@ -135,6 +135,9 @@ $ git push -v origin master/main
 ```bash
 $ git commit --amend --no-edit
 ```
+38. Чтобы убрать файл из списка для коммита, используется команда *git restore --staged*
+```bash
+$ git restore --staged %имя_файла%
 ------
 
 
