@@ -122,6 +122,10 @@ $ ssh-keygen -t ed25519
 ```bash
 $ ssh -T git@github.com
 ```
+34. Чтобы загрузить данные с локального репозитория на удалённый, используется команда *git push*
+```bash
+$ git push -v origin master/main
+```
 
 
 
